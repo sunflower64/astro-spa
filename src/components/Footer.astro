@@ -1,0 +1,44 @@
+---
+const logo = 'logo.png'
+const linkclass = 'hover: hover:font-bold'
+import {IoLogoFacebook, IoMailOutline, IoLogoWhatsapp, IoLocationSharp} from 'react-icons/io5/index.js'
+---
+
+<div id="Inicio" class="bottom-0 bg-primary text-white min-w-full z-50 py-2">
+ <div class="flex flex-col md:flex-row items-center justify-between max-w-4xl mx-auto px-5">
+  <a class="flex items-center text-3xl font-bold grow md:grow-0" href="/">
+    <h1 class="flex">Infinity Frequencies</h1>
+    <img class="object-cover h-16 h-16 p-2.5" src={logo} alt="">
+  </a>
+
+  <div class="flex flex-col justify-around grow min-w-full text-center sm:text-left sm:flex-row md:min-w-0">
+    
+  <div class="mb-4 sm:mb-0">
+    <h1 class="font-semibold">Infinity<br>Frequencies</h1>
+    <p>Descripcion</p>
+    <p>Descripcion</p>
+    <p>Descripcion</p>
+  </div>
+  
+  <div class="flex flex-col mb-4 sm:mb-0">
+    <h1 class="font-semibold">Categories</h1>
+      <a class="" href="#Inicio">Home</a>
+      <a class="" href="#Services">Services</a>
+      <a class="" href="#About">About Us</a>
+      <a class="" href="#Contact">Contact</a>
+  </div>
+  <div class="">
+    <h1 class="font-semibold">Contacto</h1>
+    <a href="" class="flex justify-center sm:justify-start items-center"><IoLocationSharp className="mr-1"/>Apple Park, California</a>
+    <a id="mailfooter" href="" class="flex justify-center sm:justify-start items-center" target="_blank"><IoMailOutline className="mr-1"/>infinity<span class="hidden">anti-bot-bit</span>@frequencies.com</a>
+    <a href="facebook.com/puntocasablanca" class="flex justify-center sm:justify-start items-center" target="_blank"><IoLogoFacebook className="mr-1" />puntocasablanca</a>
+    <a href="https://api.whatsapp.com/send?phone=56989491207&text=Hola%20me%20gustar%C3%ADa%20cotizar%20un%20trabajo." class="flex justify-center sm:justify-start items-center" target="_blank"><IoLogoWhatsapp className="mr-1"/>56 9 8949 1207</a>
+  </div>
+  </div>
+ </div>
+  </div>
+  <script>
+    var encEmail = "c2ltb25kb25vc28yNUBnbWFpbC5jb20=";
+    const form = document.getElementById("mailfooter");
+    form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+  </script>

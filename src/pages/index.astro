@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Hero from '../components/Hero.astro'
+import Bannerline from '../components/Bannerline.astro'
+import About from '../components/About.astro'
+import Contact from '../components/Contact.astro'
+import CardR from '../components/Card-r.astro'
+import Title from '../components/Title.astro';
+---
+
+<Layout title="Punto de Mira">
+  <Hero/>
+	<main>
+    <Title titulo="Services" idnav="Services"/>
+    <CardR
+      titulo="Lorem ipsum"
+      descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat vulputate tempus. Nunc nisl nisl, sodales vel nisl vitae, ornare consequat turpis. Maecenas eu risus non turpis convallis finibus. Pellentesque semper suscipit tempor. Donec posuere sit amet dolor eget commodo. Pellentesque luctus imperdiet orci, fermentum luctus quam tempus vitae. Nullam semper elit non congue dapibus. Donec ut justo orci. Cras at lorem a ligula eleifend fringilla ac sit amet dolor. "
+      imgRuta="1.jpg"/>
+    <Card 
+      titulo="Curabitur sagittis"
+      descripcion="Curabitur sagittis odio eget lacus bibendum, non euismod elit imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas auctor massa nisl, quis ullamcorper est mattis ac. Nulla tincidunt sem id ultricies efficitur. Nullam blandit maximus ultrices. Praesent non cursus nunc. Vestibulum dictum massa pretium nunc varius, a tincidunt magna placerat. In ipsum elit, ornare at varius sed, condimentum non neque. Suspendisse ultrices lacus eu arcu mollis volutpat. "
+      imgRuta="2.jpg"/>
+    <CardR
+      titulo="Cras nec pulvinar ipsum"
+      descripcion="Cras nec pulvinar ipsum. Nunc rhoncus lorem mi, non convallis neque finibus in. Phasellus auctor velit justo, eu vehicula tellus malesuada non. In viverra egestas est iaculis tristique. Donec congue nibh purus, eu sollicitudin turpis lacinia sed. Proin posuere mi nec felis dignissim, a facilisis mauris congue. Aliquam eget sodales justo, id pretium ante. Mauris interdum ante et lectus commodo, eleifend semper tellus dictum. "
+      imgRuta="3.jpg"/>
+    <Bannerline/>
+    <Title titulo="About Us" idnav="About"/>
+    <About />
+    <Title titulo="Contact" idnav="Contact"/>
+    <Contact />
+</main>
+</Layout>

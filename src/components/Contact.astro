@@ -1,0 +1,25 @@
+---
+const img = '1.jpg'
+import Map from './Map.astro'
+import {IoLogoFacebook, IoMailOutline, IoLogoWhatsapp, IoLocationSharp} from 'react-icons/io5/index.js'
+
+---
+<div class="flex flex-col-reverse md:flex-row justify-around max-w-3xl bg-red-200 mx-auto my-8 px-4">
+  <Map/>
+  <div class="p-4">
+    <h1 class="text-2xl font-bold">Infinity Frequencies</h1>
+    <p>Infinity Frequencies is a vaporwave artist. He is known for his series of works from Dream Recovery onward, which are notable for being some of the earliest releases in the "broken transmission" style, as well as creating the associated "computer gaze" vaporwave subgenre.</p>
+    <a href="" class="flex items-center"><IoLocationSharp className="mr-1"/>Apple Park, California</a>
+    <h1 class="text-2xl font-bold pt-2">Social Network</h1>
+    <!-- Links -->
+    <a href="facebook.com/puntocasablanca" class="flex items-center" target="_blank"><IoLogoFacebook className="mr-1" />puntocasablanca</a>
+    <a id="mail" href="" class="flex items-center" target="_blank"><IoMailOutline className="mr-1"/>simondonoso25<span class="hidden">anti-bot-bit</span>@gmail.com</a>
+    <a href="https://api.whatsapp.com/send?phone=56989491207&text=Hola%20me%20gustar%C3%ADa%20cotizar%20un%20trabajo." class="flex items-center" target="_blank"><IoLogoWhatsapp className="mr-1"/>56 9 8949 1207</a>
+  </div>
+</div>
+
+<script>
+  var encEmail = "c2ltb25kb25vc28yNUBnbWFpbC5jb20=";
+  const form = document.getElementById("mail");
+  form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+</script>

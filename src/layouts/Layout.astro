@@ -1,0 +1,28 @@
+---
+export interface Props {
+	title: string;
+}
+import Navbar from '../components/Navbar.astro'
+import Footer from '../components/Footer.astro'
+import Whatsapp from '../components/Whatsapp.astro';
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html id="Inicio" class="scroll-pt-14" lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-zinc-100 min-h-screen">
+    <Navbar/>
+    <div class="">
+		<slot />
+    </div>
+    <Footer/>
+		<Whatsapp/>
+	</body>
+</html>
