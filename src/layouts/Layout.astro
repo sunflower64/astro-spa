@@ -8,6 +8,7 @@ import Whatsapp from '../components/Whatsapp.astro';
 const { title } = Astro.props;
 const { description } = Astro.props;
 const { keywords } = Astro.props;
+const { imgOpenGraph } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -19,6 +20,7 @@ const { keywords } = Astro.props;
 		<meta name="generator" content={Astro.generator} /> 
     <meta name="description" content={description}>
     <meta name="keywords" content={keywords}>
+    <meta property="og:image" content={imgOpenGraph}>
 		<title>{title}</title>
 	</head>
 	<body class="bg-zinc-100 min-h-screen">
