@@ -29,16 +29,22 @@ import {IoLogoFacebook, IoMailOutline, IoLogoWhatsapp, IoLocationSharp} from 're
   </div>
   <div class="">
     <h1 class="font-semibold">Contacto</h1>
-    <a href="" class="flex justify-center sm:justify-start items-center"><IoLocationSharp className="mr-1"/>Apple Park, California</a>
+    <a href="https://www.google.com/maps?ll=37.334644,-122.008972&z=16&t=m&hl=es-ES&gl=US&mapclient=embed&cid=4255201883087866096" class="flex justify-center sm:justify-start items-center"><IoLocationSharp className="mr-1"/>Apple Park, California</a>
     <a id="mailfooter" href="" class="flex justify-center sm:justify-start items-center" target="_blank"><IoMailOutline className="mr-1"/>infinity<span class="hidden">anti-bot-bit</span>@frequencies.com</a>
-    <a href="facebook.com/puntocasablanca" class="flex justify-center sm:justify-start items-center" target="_blank"><IoLogoFacebook className="mr-1" />puntocasablanca</a>
-    <a href="https://api.whatsapp.com/send?phone=56989491207&text=Hola%20me%20gustar%C3%ADa%20cotizar%20un%20trabajo." class="flex justify-center sm:justify-start items-center" target="_blank"><IoLogoWhatsapp className="mr-1"/>56 9 8949 1207</a>
+    <a href="https://web.facebook.com/InfinityFrequencies" class="flex justify-center sm:justify-start items-center" target="_blank"><IoLogoFacebook className="mr-1" />InfinityFrequencies</a>
+    <a href="https://wa.me" class="flex justify-center sm:justify-start items-center" target="_blank"><IoLogoWhatsapp className="mr-1"/>56 9 1234 5678</a>
   </div>
   </div>
  </div>
   </div>
+
+  <!-- 
+  To avoid any type of spam that could bring the mailto:email in the public code,
+  use the encode of (https://www.base64encode.org/) and leave the result below,'
+  Javascript will take care of decoding the mail and leave it as it should be.
+ -->
   <script>
-    var encEmail = "c2ltb25kb25vc28yNUBnbWFpbC5jb20=";
+    var encEmail = "aW5maW5pdHlAZnJlcXVlbmNpZXMuY29t";
     const form = document.getElementById("mailfooter");
     form.setAttribute("href", "mailto:".concat(atob(encEmail)));
   </script>

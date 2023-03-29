@@ -3,7 +3,7 @@ module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
     colors: {
-      'white': '#e4e4e7',
+      'white': '#f4f4f5',
       'gray': '#d4d4d8',
       'primary':'#1d4ed8',
       'primary-hover': '#1e3a8a',
